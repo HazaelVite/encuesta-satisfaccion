@@ -145,15 +145,21 @@
         </v-snackbar>
       </div>
     </div>
-    <div v-else>Evento de otro modulo {{this.cualModulo}}</div>
+    <div v-else>
+      <Error />
+    </div>
   </v-container>
 </template>
 
 <script>
 import axios from "axios";
 import { createForm } from "@/general";
+import Error from "@/components/Error";
 
 export default {
+  components: {
+    Error,
+  },
   name: "Home",
   data() {
     return {

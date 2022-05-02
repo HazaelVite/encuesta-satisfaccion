@@ -8,7 +8,7 @@
         </v-row>
         <v-row class="text-center text-h5 mt-5" justify="center">
           <p>
-          Puede consultar los horarios en la agenda dando click <a href="https://eventosmedicos2021.com/img/agenda-1.jpg">aqui</a>
+          Puede consultar los horarios en la agenda dando click <a href="https://eventosmedicos2021.com/schedule">aqui</a>
           </p>
         </v-row>
       </v-card-text>

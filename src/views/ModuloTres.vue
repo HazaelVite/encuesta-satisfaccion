@@ -1,7 +1,6 @@
 <template >
   <v-container>
     <div v-if="this.hayEvento == '1'">
-      Evento de este modulo {{this.cualModulo}}
       <p class="text-center text-h3" style="color: #b52f26">
         Encuesta de Satisfacción Modulo {{ this.cualModulo }}<br />
         {{ nombreEvento }}
@@ -146,15 +145,21 @@
         </v-snackbar>
       </div>
     </div>
-    <div v-else>Evento de otro modulo {{this.cualModulo}}</div>
+    <div v-else>
+      <Error />
+    </div>
   </v-container>
 </template>
 
 <script>
 import axios from "axios";
 import { createForm } from "@/general";
+import Error from "@/components/Error";
 
 export default {
+  components: {
+    Error,
+  },
   name: "Home",
   data() {
     return {
