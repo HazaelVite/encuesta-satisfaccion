@@ -2,6 +2,12 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Error from '@/components/Error.vue'
+// Modulos
+import ModuloUno from '@/views/ModuloUno'
+import ModuloDos from '@/views/ModuloDos'
+import ModuloTres from '@/views/ModuloTres'
+import ModuloCuatro from '@/views/ModuloCuatro'
+import ModuloCinco from '@/views/ModuloCinco'
 
 Vue.use(VueRouter)
 
@@ -14,28 +20,28 @@ const routes = [
   },
   {
     path: '/modulo-1',
-    name: 'Home',
-    component: Home
+    name: 'ModuloUno',
+    component: ModuloUno
   },
   {
     path: '/modulo-2',
-    name: 'Home',
-    component: Home
+    name: 'ModuloDos',
+    component: ModuloDos
   },
   {
     path: '/modulo-3',
-    name: 'Home',
-    component: Home
+    name: 'ModuloTres',
+    component: ModuloTres
   },
   {
     path: '/modulo-4',
-    name: 'Home',
-    component: Home
+    name: 'ModuloCuatro',
+    component: ModuloCuatro
   },
   {
     path: '/modulo-5',
-    name: 'Home',
-    component: Home
+    name: 'ModuloCinco',
+    component: ModuloCinco
   },
   {
     path: '/error',
